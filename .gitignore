@@ -1,0 +1,36 @@
+# ---------------------------------------------------------------------------
+# Daten der laufenden Installation
+#
+# Hier liegen echte Personal- und Kundenakten samt hochgeladener Dokumente.
+# Diese gehoeren niemals in die Versionsverwaltung: Einmal erfasst, bleiben sie
+# dauerhaft in der Historie - auch wenn die Datei spaeter geloescht wird.
+# Gesichert wird der Ordner durch Kopieren, nicht durch Git.
+# ---------------------------------------------------------------------------
+server/daten/
+
+# ---------------------------------------------------------------------------
+# Schluessel und Zugangsdaten
+#
+# schluessel.bin entschluesselt das gespeicherte Postfach-Passwort. Zusammen
+# mit der Datenbank abgelegt waere die Verschluesselung wertlos.
+# ---------------------------------------------------------------------------
+*.bin
+*.key
+*.pem
+*.pfx
+.env
+.env.*
+local.settings.json
+
+# Abhaengigkeiten - werden mit "npm install" wiederhergestellt
+node_modules/
+npm-debug.log*
+
+# Betriebssystem und Editoren
+Thumbs.db
+desktop.ini
+.DS_Store
+*.swp
+*~
+.vscode/
+.idea/
