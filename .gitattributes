@@ -1,0 +1,2 @@
+# Windows-Startdatei braucht CRLF-Zeilenenden, sonst bricht cmd.exe ab
+*.cmd text eol=crlf
